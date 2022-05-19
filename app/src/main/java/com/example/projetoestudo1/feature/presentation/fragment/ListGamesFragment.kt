@@ -50,18 +50,8 @@ class ListGamesFragment : BaseFragment() {
         viewModel.getListGames()
         viewModel.getGameList.observe(viewLifecycleOwner, {response ->
             response.let { games ->
-                Log.i("Response", "initObserver: ${games.title}")
-                adapter?.append(listOf(games))
+                adapter?.append(games)
             }
         })
     }
-//        Log.i("Response", "initObserver: ENTROU AQUI")
-//        lifecycleScope.launch {
-//            Log.i("Response", "ENTROU AQUIII 2")
-//            viewModel.getGameList.collect { state->
-//                Log.i("Response", "ENTROU AQUIII 3")
-//                viewModel.getListGames()
-//
-//            }
-//        }
 }

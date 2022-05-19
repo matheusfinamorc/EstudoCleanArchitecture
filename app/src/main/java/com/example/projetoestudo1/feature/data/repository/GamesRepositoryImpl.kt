@@ -30,23 +30,4 @@ class GamesRepositoryImpl(private val dataSource: GamesDataSource) : GamesReposi
             }
         }
     }
-
-//        return dataSource.getListGames().catch {
-//            when (it) {
-//                is HttpException -> {
-//                    val code = it.code().toString()
-//                    val message = it.message()
-//                    emit(Resource.Error(data = null, code = code, messagem = message))
-//
-//                    Log.i("Response", "DataSource Error: ${it.code()}")
-//                }
-//                is IOException -> {
-//                    emit(Resource.Failure(data = null, throwable = it))
-//                    Log.i("Response", "DataSource Failure: ${it}")
-//                }
-//                else -> {
-//                    emit(Resource.Failure(data = null, throwable = it))
-//                }
-//            }
-//        }
 }
