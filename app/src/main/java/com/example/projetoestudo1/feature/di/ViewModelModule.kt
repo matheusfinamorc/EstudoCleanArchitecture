@@ -7,7 +7,7 @@ import org.koin.dsl.module
 object ViewModelModule {
     val get = module(override = true){
         viewModel {
-            GamesViewModel(repository = get())
+            GamesViewModel(getGamesUseCase = get())
         }
     }
 }

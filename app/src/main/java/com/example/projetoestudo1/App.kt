@@ -2,6 +2,7 @@ package com.example.projetoestudo1
 
 import android.app.Application
 import com.example.projetoestudo1.feature.di.*
+import com.example.projetoestudo1.feature.domain.usecase.GetGamesUseCase
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -22,8 +23,8 @@ class App: Application() {
                     DataModule.get,
                     ViewModelModule.get,
                     RepositoryModule.get,
-                    UseCaseModule.get,
-                    DataSourceModule.get
+                    GetUseCaseModule.get,
+                    DataSourceModule.get,
                 )
             )
         }

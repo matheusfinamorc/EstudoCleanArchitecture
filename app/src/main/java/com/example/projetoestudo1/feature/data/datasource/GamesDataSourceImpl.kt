@@ -1,6 +1,5 @@
 package com.example.projetoestudo1.feature.data.datasource
 
-import android.util.Log
 import com.example.projetoestudo1.architecture.Resource
 import com.example.projetoestudo1.feature.data.remote.service.Api
 import com.example.projetoestudo1.feature.domain.datasource.GamesDataSource

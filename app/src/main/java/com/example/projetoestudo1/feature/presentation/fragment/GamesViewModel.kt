@@ -7,17 +7,18 @@ import androidx.lifecycle.viewModelScope
 import com.example.projetoestudo1.architecture.Resource
 import com.example.projetoestudo1.feature.domain.model.games.GamesResponse
 import com.example.projetoestudo1.feature.domain.repository.GamesRepository
+import com.example.projetoestudo1.feature.domain.usecase.GetGamesUseCase
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class GamesViewModel(
-    private val repository: GamesRepository,
+    private val getGamesUseCase: GetGamesUseCase
 ) : ViewModel() {
     private val _getGameList: MutableLiveData<List<GamesResponse>> = MutableLiveData()
     val getGameList = _getGameList as LiveData<List<GamesResponse>>
 
     fun getListGames() = viewModelScope.launch {
-        repository.getListGames().collectLatest {
+        getGamesUseCase.invoke().collectLatest {
             when(it){
                 is Resource.Success -> {
                     _getGameList.postValue(it.data!!)
