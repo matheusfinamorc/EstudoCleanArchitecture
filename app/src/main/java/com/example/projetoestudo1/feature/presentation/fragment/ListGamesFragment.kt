@@ -49,9 +49,19 @@ class ListGamesFragment : BaseFragment() {
     private fun initObserver() {
         viewModel.getListGames()
         viewModel.getGameList.observe(viewLifecycleOwner, {response ->
-            response.let { games ->
-                adapter?.append(games)
+            if(response.isEmpty()){
+                viewLifecycleOwnerObserver(viewModel.loading){
+                    if(it){showLoading(binding.listGamesLoading)}
+                }
+            }else {
+                response.let { games ->
+                    adapter?.append(games)
+                    hideLoading(binding.listGamesLoading
+                    )
+                }
             }
+
         })
+
     }
 }

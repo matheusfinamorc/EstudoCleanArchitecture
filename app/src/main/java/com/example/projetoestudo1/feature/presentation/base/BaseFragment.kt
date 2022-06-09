@@ -2,6 +2,7 @@ package com.example.projetoestudo1.feature.presentation.base
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
@@ -62,5 +63,17 @@ abstract class BaseFragment: Fragment() {
         inputMethodManager.hideSoftInputFromWindow(view?.windowToken, 0)
     } catch (e: Exception) {
         /** Do nothing **/
+    }
+
+    /* ----------------------- Loading --------------------------- */
+    /** Show loading inside view */
+    fun showLoading(view: View) {
+        view.visibility = View.VISIBLE
+    }
+
+
+    /** Hide loading inside view */
+    fun hideLoading(view: View) {
+        view.visibility = View.GONE
     }
 }

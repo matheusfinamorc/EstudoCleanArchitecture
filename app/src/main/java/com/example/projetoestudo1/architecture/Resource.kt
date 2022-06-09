@@ -10,4 +10,6 @@ sealed class Resource<out T> {
 
     data class Exception<out T>(val throwable: Throwable) : Resource<T>()
 
+    data class Loading<out T>(val data: T? = null, val isLoading: Boolean): Resource<T>()
+
 }
