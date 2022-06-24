@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/drawable/border_item.xml" value="0.37743589743589745" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/drawable/expand_more.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/drawable/placeholder.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/fragment_games.xml" value="0.3671875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/include_view_games_error_state.xml" value="0.3671875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/include_view_games_loading_state.xml" value="0.3671875" />
-        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/item_game.xml" value="0.25" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/item_game.xml" value="0.5" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/item_games2.xml" value="0.3671875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/layout/shimmer_layout_games_item.xml" value="0.3671875" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/ProjetoEstudo1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.38333333333333336" />
       </map>
     </option>
   </component>

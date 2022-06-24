@@ -8,5 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="medium_grey">#D1D1D1</color>
+    <color name="dim_gray">#696969</color>
+    <color name="golden">#daa520</color>
+    <color name="red_status_bar">#e61919</color>
+    <color name="red">#cc0000</color>
+    <color name="dark_gray">#DCDCDC</color>
 
 </resources>

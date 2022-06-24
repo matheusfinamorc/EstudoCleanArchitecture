@@ -38,7 +38,6 @@ class ListGamesFragment : BaseFragment() {
         setupRecyclerView()
     }
 
-
     private fun setupRecyclerView() {
         binding.recyclerGames.apply {
             layoutManager = LinearLayoutManager(context)
